@@ -17,6 +17,7 @@
 
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
 		<script src="js/libs/modernizr.custom.45655.js"></script>
+        <?php wp_head(); ?>
 	</head>
 	<body>
 
