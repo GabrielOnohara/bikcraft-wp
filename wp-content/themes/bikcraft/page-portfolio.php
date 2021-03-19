@@ -3,13 +3,8 @@
 ?>
 
 <?php get_header(); ?>
-
-		<section class="introducao-interna interna_portfolio">
-			<div class="container">
-				<h1>Portfólio</h1>
-				<p>conheça os projetos que amamos mostrar</p>
-			</div>
-		</section>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php include(TEMPLEPATH . 'inc/introducao.php'); ?>
 
 		<section class="container animar-interno">
 			<ul class="rslides">
@@ -55,5 +50,5 @@
 				</ul>
 			</div>
 		</section>
-
+		<?php endwhile; else: endif;?>
 		<?php get_footer(); ?>		
