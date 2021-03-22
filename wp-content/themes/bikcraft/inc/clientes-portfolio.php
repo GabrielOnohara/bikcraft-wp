@@ -1,3 +1,4 @@
+<?php $portfolio = get_page_by_title('portfolio') ;?>
 <section class="portfolio">
 			<div class="container">
 				<ul class="portfolio_lista rslides_portfolio">
@@ -16,4 +17,10 @@
 
 				</ul>
 			</div>	
+			<?php if(!is_page('portfolio')){ ; ?>
+			<div class="call">
+				<p><?php the_field('chamada_portfolio', $portfolio);?></p>
+				<a href="/bikcraft-wp/portfolio/" class="btn btn-preto">Portfólio</a>
+			</div>
+            <?php } ; ?>
 </section>
