@@ -1,6 +1,8 @@
+<?php $sobre = get_page_by_title('sobre') ;?>
+
 <section class="qualidade container">
-			<h2 class="subtitulo">Qualidade</h2>
-			<img src="<?php echo get_template_directory_uri(); ?>/img/bikcraft-qualidade.png" alt="Bikcraft">
+			<h2 class="subtitulo"><?php the_field('titulo_qualidade', $sobre) ;?></h2>
+			<img src="<?php the_field('logo_bikcraft', $sobre);?>" alt="Bikcraft">
 			<ul class="qualidade_lista">
 				<li class="grid-1-3">
 					<h3>Durabilidade</h3>
@@ -15,8 +17,10 @@
 					<p>Além de ajudar a cuidar do meio ambiente, tirando carros da rua, toda a produção é sustentável.</p>
 				</li>
 			</ul>
+            <?php if(!is_page('sobre')){ ; ?>
 			<div class="call">
-				<p>conheça mais a nossa história</p>
+				<p><?php the_field('chamada_sobre', $sobre);?></p>
 				<a href="/bikcraft-wp/sobre/" class="btn btn-preto">Sobre</a>
 			</div>
+            <?php } ; ?>
 </section>
