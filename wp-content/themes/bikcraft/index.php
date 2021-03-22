@@ -8,5 +8,5 @@
 <?php endwhile; else: ?>
 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 <?php endif; ?>
-	<p>Página Index</p>
+
 <?php get_footer(); ?>		

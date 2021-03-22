@@ -121,8 +121,8 @@ img {
 /* Header */
 
 .header {
-	position: fixed;
 	top: 0;
+	position: fixed;
 	width: 100%;
 	background: #fec63e; /* Amarelo */
 	padding: 15px 0;
@@ -165,9 +165,9 @@ img {
 	height: 380px;
 	background: url(img/bg.jpg) no-repeat center;
 	background-size: cover;
-	margin-top: 92px;
+	margin-top: 60px;
 	text-align: center;
-	padding-top: 80px;
+	padding-top: 40px;
 }
 
 .introducao h1 {
