@@ -23,15 +23,15 @@
 
 		<header class="header">
 			<div class="container">
-				<a href="index.html" class="grid-4">
-					<img src="img/bikcraft.png" alt="Bikcraft">
+				<a href="/bikcraft-wp/" class="grid-4">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/bikcraft.png" alt="Bikcraft">
 				</a>
 				<nav class="grid-12 header_menu">
 					<ul>
-						<li><a href="/bickraft-wp/sobre.html">Sobre</a></li>
-						<li><a href="/bickraft-wp/produtos.html">Produtos</a></li>
-						<li><a href="/bickraft-wp/portfolio.html">Portfólio</a></li>
-						<li><a href="/bickraft-wp/contato.html">Contato</a></li>
+						<li><a href="/bickraft-wp/sobre/">Sobre</a></li>
+						<li><a href="/bickraft-wp/produtos/">Produtos</a></li>
+						<li><a href="/bickraft-wp/portfolio/">Portfólio</a></li>
+						<li><a href="/bickraft-wp/contato/">Contato</a></li>
 					</ul>
 				</nav>
 			</div>
