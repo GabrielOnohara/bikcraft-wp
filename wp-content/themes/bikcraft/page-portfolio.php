@@ -4,7 +4,7 @@
 
 <?php get_header(); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<?php include(TEMPLEPATH . 'inc/introducao.php'); ?>
+<?php include(TEMPLATEPATH . '/inc/introducao.php'); ?>
 
 		<section class="container animar-interno">
 			<ul class="rslides">
@@ -31,6 +31,12 @@
 			</ul>
 		</section>
 
+		<section class="portfolio">
+			<div class="container">
+				<?php include(TEMPLATEPATH . '/inc/clientes-portfolio.php'); ?>
+			</div>	
+		</section>
+		
 		
 <?php endwhile; else: endif;?>
 <?php get_footer(); ?>		
