@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+	
 	<head>
 		<meta charset="utf-8">
 		<title><?php bloginfo('name'); ?></title>
@@ -19,6 +20,19 @@
 		<script src="js/libs/modernizr.custom.45655.js"></script>
         <?php wp_head(); ?>
 	</head>
+
+<style type="text/css">
+.header_menu .current_page_item a{
+	color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+	.header_menu
+	.current_page_item a{
+	color: #fff;
+}
+}
+</style>
 	<body>
 
 		<header class="header">
@@ -27,12 +41,13 @@
 					<img src="<?php echo get_template_directory_uri(); ?>/img/bikcraft.png" alt="Bikcraft">
 				</a>
 				<nav class="grid-12 header_menu">
-					<ul>
-						<li><a href="/bikcraft-wp/sobre/">Sobre</a></li>
-						<li><a href="/bikcraft-wp/produtos/">Produtos</a></li>
-						<li><a href="/bikcraft-wp/portfolio/">Portfólio</a></li>
-						<li><a href="/bikcraft-wp/contato/">Contato</a></li>
-					</ul>
+				<?php
+	$args = array(
+		'menu' => 'principal',
+		'container' => false
+	);
+	wp_nav_menu( $args );
+?>
 				</nav>
 			</div>
 		</header>
