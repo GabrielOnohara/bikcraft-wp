@@ -10,7 +10,7 @@
 					<p><?php the_field('quote_introducao'); ?></p>
 					<cite><?php the_field('citacao_introducao'); ?></cite>
 				</blockquote>
-				<a href="/bikcraft-wp/produtos" class="btn">Orçamento</a>
+				<a href="/bikcraft-wp/contato/" class="btn">Orçamento</a>
 			</div>
 		</section>
 		

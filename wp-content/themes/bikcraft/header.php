@@ -28,10 +28,10 @@
 				</a>
 				<nav class="grid-12 header_menu">
 					<ul>
-						<li><a href="/bickraft-wp/sobre/">Sobre</a></li>
-						<li><a href="/bickraft-wp/produtos/">Produtos</a></li>
-						<li><a href="/bickraft-wp/portfolio/">Portfólio</a></li>
-						<li><a href="/bickraft-wp/contato/">Contato</a></li>
+						<li><a href="/bikcraft-wp/sobre/">Sobre</a></li>
+						<li><a href="/bikcraft-wp/produtos/">Produtos</a></li>
+						<li><a href="/bikcraft-wp/portfolio/">Portfólio</a></li>
+						<li><a href="/bikcraft-wp/contato/">Contato</a></li>
 					</ul>
 				</nav>
 			</div>
