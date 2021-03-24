@@ -1,6 +1,6 @@
-<?php get_header(); ?>
-
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php
+get_header();
+?>
 <style type="text/css">
 /*Blog Arquivos*/
 .introducao-blog {
@@ -129,28 +129,32 @@
 }
 }
 </style>
-<article>
-	<section class="introducao-interna introducao-geral">
-		<div class="container">
-			<h1><?php the_title(); ?></h1>
-		</div>
-	</section>
+<section class="introducao-interna introducao-blog">
+	<div class="container">
+		<h1>Blog</h1>
+		<p>As principais notícias sobre Bicicletas</p>
+	</div>
+</section>
 
-	<section class="container conteudo-geral">
-		<div class="grid-8">
-			<?php the_content(); ?>
-		</div>
-	</section>
-</article>
+<div class="container blog-container">
 
-<?php endwhile; else: ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	
+	<article class="grid-16 blog-post">
+		<h2><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h2>
+	</article>
 
-	<section class="introducao-interna introducao-geral">
-		<div class="container">
-			<h1>Página não encontrada.</h1>
-		</div>
-	</section>
+<?php endwhile; ?>
 
-<?php endif; ?>
+	<div class="nav-blog grid-16">
+		<?php next_posts_link( '← Posts Antigos' ); ?>
+		<?php previous_posts_link( 'Posts Novos →' ); ?>
+	</div>
+
+<?php else: endif; ?>
+
+</div>
+
+
 
 <?php get_footer(); ?>
